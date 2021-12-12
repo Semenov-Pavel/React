@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './scss/main.scss';
+import ReviewsList from './components/ReviewsList/ReviewsList';
 import reportWebVitals from './reportWebVitals';
+import reviews from './data/reviews/reviews';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ReviewsList reviews={reviews}/>,
   document.getElementById('root')
 );
 
